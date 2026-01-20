@@ -67,14 +67,8 @@ Pastikan .NET 8 SDK dan MySQL sudah terinstall.
 cd backend/KaryawanAPI
 dotnet run
 
-yaml
-Copy code
-
 Backend berjalan di:
 http://localhost:5086
-
-yaml
-Copy code
 
 Database akan otomatis dibuat saat pertama kali aplikasi dijalankan.
 
@@ -135,3 +129,4 @@ atau
 
 Aplikasi siap digunakan.  
 Backend, frontend, dan database sudah terintegrasi dengan MySQL.
+
