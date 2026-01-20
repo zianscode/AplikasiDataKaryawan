@@ -19,14 +19,12 @@ namespace KaryawanAPI.Controllers
             _context = context;
         }
 
-        // GET: api/Karyawan
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Karyawan>>> GetKaryawans()
         {
             return await _context.Karyawans.ToListAsync();
         }
 
-        // GET: api/Karyawan/1234567890123456
         [HttpGet("{nik}")]
         public async Task<ActionResult<Karyawan>> GetKaryawan(string nik)
         {
@@ -40,11 +38,9 @@ namespace KaryawanAPI.Controllers
             return karyawan;
         }
 
-        // POST: api/Karyawan
         [HttpPost]
         public async Task<ActionResult<Karyawan>> PostKaryawan(Karyawan karyawan)
         {
-            // Cek apakah NIK sudah ada
             if (KaryawanExists(karyawan.NIK))
             {
                 return Conflict(new { message = "NIK sudah terdaftar" });
@@ -56,7 +52,6 @@ namespace KaryawanAPI.Controllers
             return CreatedAtAction("GetKaryawan", new { nik = karyawan.NIK }, karyawan);
         }
 
-        // PUT: api/Karyawan/1234567890123456
         [HttpPut("{nik}")]
         public async Task<IActionResult> PutKaryawan(string nik, Karyawan karyawan)
         {
@@ -86,7 +81,6 @@ namespace KaryawanAPI.Controllers
             return NoContent();
         }
 
-        // DELETE: api/Karyawan/1234567890123456
         [HttpDelete("{nik}")]
         public async Task<IActionResult> DeleteKaryawan(string nik)
         {
