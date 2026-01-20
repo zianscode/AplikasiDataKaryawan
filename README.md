@@ -1,73 +1,137 @@
-Aplikasi Data Karyawan - Fullstack
-📌 Deskripsi Aplikasi
-Aplikasi web untuk mengelola data karyawan dengan fitur lengkap:
+# Aplikasi Data Karyawan – Fullstack
 
-Backend: .NET 8 API + MySQL
+Aplikasi web fullstack untuk mengelola data karyawan dengan fitur CRUD lengkap.  
+Backend menggunakan .NET 8 API dan MySQL, frontend menggunakan HTML, Bootstrap 5, dan JavaScript.
 
-Frontend: HTML + Bootstrap 5 + JavaScript
+---
 
-Database: MySQL dengan Entity Framework
+## 📌 Deskripsi Aplikasi
 
-🎯 Fitur Utama
-✅ Tambah data karyawan baru
-✅ Lihat semua data karyawan
-✅ Edit data yang sudah ada
-✅ Hapus data dengan konfirmasi
-✅ Validasi input form
-✅ Tampilan responsif
-✅ Mode view/edit terpisah
+Aplikasi ini dibuat untuk mengelola data karyawan secara terstruktur dan mudah digunakan.  
+Backend dan frontend sudah terintegrasi langsung dengan database MySQL menggunakan Entity Framework.
 
-📁 Struktur Project
-text
+---
+
+## 🎯 Fitur Utama
+
+- Tambah data karyawan baru
+- Lihat semua data karyawan
+- Edit data karyawan
+- Hapus data dengan konfirmasi
+- Validasi input form
+- Tampilan responsif
+- Mode view dan edit terpisah
+
+---
+
+## 🧱 Teknologi yang Digunakan
+
+### Backend
+- .NET 8
+- ASP.NET Core Web API
+- Entity Framework Core
+- MySQL
+- Migration otomatis
+
+### Frontend
+- HTML5
+- CSS3
+- Bootstrap 5
+- JavaScript
+
+### Database
+- MySQL
+
+---
+
+## 📁 Struktur Project
+
 PROJECT/
-├── backend/          # API .NET 8
-├── frontend/         # HTML/CSS/JS
-└── database/         # Script SQL
-⚡ Cara Pakai
-Backend: cd backend/KaryawanAPI → dotnet run
+├── backend/ # API .NET 8
+│ └── KaryawanAPI
+├── frontend/ # HTML, CSS, JavaScript
+│ └── index.html
+└── database/ # Script SQL
 
-Frontend: Buka frontend/index.html di browser
+yaml
+Copy code
 
-Database: Sudah otomatis dibuat saat pertama run
+---
 
-🔧 Teknologi yang Digunakan
-Backend: .NET 8, Entity Framework, MySQL
+## ⚡ Cara Menjalankan Aplikasi
 
-Frontend: HTML5, CSS3, Bootstrap 5, JavaScript
+### Backend
 
-Database: MySQL dengan migration otomatis
+Pastikan .NET 8 SDK dan MySQL sudah terinstall.
 
-📞 API Endpoints
-text
-GET    /api/karyawan           → Ambil semua data
-GET    /api/karyawan/{nik}     → Ambil data by NIK
-POST   /api/karyawan           → Tambah data baru
-PUT    /api/karyawan/{nik}     → Update data
-DELETE /api/karyawan/{nik}     → Hapus data
-🌐 URL Aplikasi
-Backend: http://localhost:5086
+cd backend/KaryawanAPI
+dotnet run
 
-Frontend (Live Server) atau buka file langsung
+yaml
+Copy code
 
-⚠️ Troubleshooting Singkat
-CORS error → Pastikan dotnet run sudah jalan
+Backend berjalan di:
+http://localhost:5086
 
-Database error → Cek MySQL service berjalan
+yaml
+Copy code
 
-Form error → Cek console browser (F12)
+Database akan otomatis dibuat saat pertama kali aplikasi dijalankan.
 
-📋 Data yang Disimpan
-NIK (16 digit, unik)
+---
 
-Nama Lengkap
+### Frontend
 
-Jenis Kelamin
+- Buka file `frontend/index.html` langsung di browser  
+atau  
+- Jalankan menggunakan Live Server
 
-Tanggal Lahir
+---
 
-Alamat
+## 📞 API Endpoints
 
-Negara
+- GET `/api/karyawan`  
+  Ambil semua data karyawan
 
-🚀 Aplikasi siap digunakan!
-Backend + Frontend sudah terintegrasi dengan database MySQL.
+- GET `/api/karyawan/{nik}`  
+  Ambil data karyawan berdasarkan NIK
+
+- POST `/api/karyawan`  
+  Tambah data karyawan baru
+
+- PUT `/api/karyawan/{nik}`  
+  Update data karyawan
+
+- DELETE `/api/karyawan/{nik}`  
+  Hapus data karyawan
+
+---
+
+## 📋 Data yang Disimpan
+
+- NIK (16 digit, unik)
+- Nama Lengkap
+- Jenis Kelamin
+- Tanggal Lahir
+- Alamat
+- Negara
+
+---
+
+## ⚠️ Troubleshooting
+
+- **CORS Error**  
+  Pastikan backend (`dotnet run`) sudah berjalan
+
+- **Database Error**  
+  Pastikan service MySQL aktif
+
+- **Form Error**  
+  Cek console browser (F12)
+
+---
+
+## 🚀 Status
+
+Aplikasi siap digunakan.  
+Backend, frontend, dan database sudah terintegrasi dengan MySQL.
