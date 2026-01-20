@@ -44,17 +44,6 @@ Backend dan frontend sudah terintegrasi langsung dengan database MySQL menggunak
 
 ---
 
-## 📁 Struktur Project
-
-PROJECT/
-├── backend/ # API .NET 8
-│ └── KaryawanAPI
-├── frontend/ # HTML, CSS, JavaScript
-│ └── index.html
-└── database/ # Script SQL
-
----
-
 ## ⚡ Cara Menjalankan Aplikasi
 
 ### Backend
@@ -126,6 +115,7 @@ atau
 
 Aplikasi siap digunakan.  
 Backend, frontend, dan database sudah terintegrasi dengan MySQL.
+
 
 
 
