@@ -53,9 +53,6 @@ PROJECT/
 │ └── index.html
 └── database/ # Script SQL
 
-yaml
-Copy code
-
 ---
 
 ## ⚡ Cara Menjalankan Aplikasi
@@ -129,5 +126,6 @@ atau
 
 Aplikasi siap digunakan.  
 Backend, frontend, dan database sudah terintegrasi dengan MySQL.
+
 
 
